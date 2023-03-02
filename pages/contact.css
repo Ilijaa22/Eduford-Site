@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background: url('/eduford_img/background.jpg') center center/cover no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+}
+nav{
+    background: rgba(14, 19, 49, 0.706);
+}
+li{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 5px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#lista li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+#lista li a:hover::after{
+    width: 100%;
+}
+#lista li a:hover{
+    color: #f44336;
+}
+.overlay{
+    background: rgba(14, 19, 49, 0.706);
+    height: 40vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+#btn{
+    color: #fff;
+    background-color: #f44336;
+    padding: 12px 36px;
+    border: 1px solid #f44336;
+    transition: 0.7s;
+}
+#btn:hover{
+    border: 1px solid white;
+    background: transparent;
+    transition: 0.7s;
+    color: #f44336;
+    border: 1px solid #f44336;
+}
+.icon i{
+    margin: 20px;
+}
+
+footer p{
+    color: rgb(88, 83, 83);
+}
+footer a{
+    font-size: 20px;
+}
+
+#map{
+    margin-top: 40px;
+    padding: 0px 130px;
+}
+#map iframe{
+    width: 100%;
+}
+#contact i{
+    color: red;
+}
+#contact h5{
+    font-size: 22px;
+}
+#forma{
+    margin-right: 60px;
+}
+
+@media(max-width:1000px) {
+    #lista li a:hover::after{
+        width: 0%;
+    }
+    .overlay h2{
+        color: #fff;
+        font-size: 35px;
+    }
+    #map{
+        padding: 20px;
+    }
+    .icon i{
+        margin: 13px;
+    }
+    #forma{
+        margin: 0px;
+    }
+    footer{
+        margin-top: 40px;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    footer a{
+        font-size: 20px;
+    }
+}

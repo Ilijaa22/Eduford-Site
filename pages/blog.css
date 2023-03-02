@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background: rgba(14, 19, 49, 0.706);
+}
+#header{
+    background: url('/eduford_img/background.jpg') center center/cover no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+}
+li{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 5px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#lista li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+#lista li a:hover::after{
+    width: 100%;
+}
+#lista li a:hover{
+    color: #f44336;
+}
+.overlay{
+    background: rgba(14, 19, 49, 0.706);
+    height: 40vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#certificate{
+    margin: 0 70px;
+}
+#certificate img{
+    width: 100%;
+}
+#post{
+    color: white;
+    background-color: #f44336;
+    padding: 5px 0px;
+}
+#kolona{
+    border-bottom: 1px solid red;
+}
+.text p{
+    font-size: 15px;
+    color: rgb(79, 78, 78);
+}
+#forma{
+    border: 1px solid #f44336;
+}
+#input{
+    background-color: #f44336;
+}
+#input::placeholder{
+    color: white;
+}
+footer p{
+    color: rgb(88, 83, 83);
+}
+footer a{
+    font-size: 20px;
+}
+#btn{
+    color: #fff;
+    background-color: #f44336;
+    padding: 12px 36px;
+    border: 1px solid #f44336;
+    transition: 0.7s;
+}
+#btn:hover{
+    border: 1px solid white;
+    background: transparent;
+    transition: 0.7s;
+    color: #f44336;
+    border: 1px solid #f44336;
+}
+
+
+@media(max-width:1000px ){
+    .overlay h2{
+        font-size: 35px;
+    }
+    #certificate img{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #certificate{
+        margin: 0;
+    }
+    .text p{
+        font-size: 17px;
+        text-align: center;
+    }
+    .text h1{
+        text-align: center;
+    }
+    #forma{
+        margin-bottom: 30px;
+    }
+}
