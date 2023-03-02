@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* ------------ Home ------------ */
+
+nav{
+    background: rgba(14, 19, 49, 0.706);
+}
+li{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 5px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#lista li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+#lista li a:hover::after{
+    width: 100%;
+}
+#lista li a:hover{
+    color: #f44336;
+}
+#home{
+    background: url('eduford_img/banner.png') center center/cover no-repeat;
+    background-size: cover;  
+}
+.overlay{
+    background: rgba(14, 19, 49, 0.706);
+    height: 88vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+.overlay p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: none;
+}
+#btn{
+    color: white;
+    background-color: transparent;
+    padding: 12px 36px;
+    border: 1px solid white;
+    transition: 0.7s;
+}
+#btn:hover{
+    border: 1px solid white;
+    background: #f44336;
+    transition: 0.7s;
+}
+
+/*  ----------- Courses ------------ */
+
+#courses p{
+    color:grey;
+}
+#post{
+    border-radius: 10px;
+    background-color: rgba(183, 113, 125, 0.158);
+    transition: 0.5s;
+}
+#post:hover{
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.446);
+}
+
+/* ------------ Global ------------ */
+
+#global p{
+    color: grey;
+}
+#town img{
+    width: 100%;
+    border-radius: 10px;  
+}
+.inner{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.lejer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.lejer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.lejer:hover{
+    background: rgba(27, 21, 21, 0.7);
+    transition: 0.5s;
+}
+.lejer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+/* ------------ Factilies ------------ */
+
+#factilites img{
+    width: 100%;
+    border-radius: 10px;
+}
+#factilites p{
+    color: grey;
+    font-size: 15px;
+}
+
+/* ------------ Comments ------------ */
+
+#comments img{
+    width: 70%;
+    border-radius: 50%;
+    display: inline-block;
+}
+#comments p{
+    color: rgb(128, 110, 110);
+}
+#card{
+    background-color: rgba(183, 113, 125, 0.163);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#card:hover{
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.446);
+    transition: 0.3s;
+}
+
+/* ------------ Contact ------------ */
+
+#contact img{
+    width: 100%;
+    border-radius: 10px;
+}
+#contact{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url('/eduford_img/banner2.jpg');
+    border-radius: 10px;
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    position: relative;
+}
+#content h1{
+    color: white;
+    font-size: 50px;
+}
+
+/* ------------ Footer ------------ */ 
+
+footer{
+    margin-top: 80px;
+}
+footer p{
+    color: rgb(88, 83, 83);
+}
+footer a{
+    font-size: 20px;
+}
+
+/* ------------ Responsive ------------ */
+
+@media(max-width:1000px ) {
+    .overlay h1{
+        font-size: 50px;
+    }
+    #btn{
+        padding: 10px 15px;
+    }
+    #lista li a:hover::after{
+        width: 0%;
+    }
+    .overlay p{
+        font-size: 17px;
+    }
+    #post{
+        margin-top: 10px;
+    }
+    #global img{
+        display: inline-block;
+    }
+    .lejer h3{
+        font-size: 20px;
+    }
+    #card{
+        margin: 10px 8px;
+    }
+    #card img{
+        margin-bottom: 10px;
+        width: 20%;
+        display: inline;
+    }
+    #contact h1{
+        font-size: 35px;
+    }
+}
