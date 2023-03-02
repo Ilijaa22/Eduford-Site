@@ -1,1 +1,2 @@
-[# Eduford-Site](https://eduford-site.netlify.app)
+Link to the site:
+https://eduford-site.netlify.app
